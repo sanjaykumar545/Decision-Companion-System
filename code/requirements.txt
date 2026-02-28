@@ -1,0 +1,4 @@
+# No Python packages are required.
+# C build/run example (GCC):
+# gcc main.c -o decision_companion
+# ./decision_companion
