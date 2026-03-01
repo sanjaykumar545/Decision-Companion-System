@@ -63,11 +63,19 @@ By abstracting the structure, the system becomes reusable for:
 
 ### Mathematical Model Used
 
-The system uses **Multi-Criteria Decision Analysis (MCDA)** with a weighted scoring model:
+The system uses **Multi-Criteria Decision Analysis (MCDA)** with a weighted normalized scoring model:
 
 ```
-Score(option) = Σ (weight × rating)
+Score(option) =
+( Σ (weight × (rating / max_value)) / total_weight ) × 100
 ```
+Where:
+
+- weight → importance of criterion  
+- rating → user score  
+- max_value → maximum possible value  
+- total_weight → sum of all weights 
+
 
 #### Why this model?
 
@@ -198,10 +206,10 @@ python main.py
 Follow CLI prompts:
 
 - Enter decision context  
-- Enter number of options  
-- Enter criteria and weights  
-- Rate each option  
-- View ranked recommendation  
+- Enter options  
+- Enter criteria, weights and maximum value for the criteria  
+- Rate each option with respect to criteria  
+- View recommendation  
 
 ---
 
@@ -215,13 +223,18 @@ Follow CLI prompts:
 - KTM Duke 200  
 - Yamaha R15  
 
-**Criteria:**
+**Criteria and Max-value:**
 
-- Price  
+- Price
 - Mileage  
 - Power  
 - Maintenance Cost  
 - Brand Value  
+
+**Rate:**
+
+- Price : For Duke, 150000 
+- Likewise, for all other criteria for each option
 
 The system computes:
 
@@ -257,7 +270,8 @@ This ensures:
   → Adjust score based on certainty of ratings  
 
 - Add optional AI assistant  
-  → Suggest missing criteria  
+  → Suggest missing criteria
+  → loading the values for the options
   → Generate more natural explanations  
 
 - Add visualization  
@@ -266,8 +280,6 @@ This ensures:
 - Add persistence  
   → Save past decisions and compare outcomes  
 
-- Add normalization  
-  → Auto-scale weights to percentages  
 
 ---
 

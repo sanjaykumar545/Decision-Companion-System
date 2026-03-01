@@ -28,3 +28,5 @@
 
 14. How can i achieve such a system without relying on ai agents?
 
+15. Can i use dictionaries inside dictionaries?
+
