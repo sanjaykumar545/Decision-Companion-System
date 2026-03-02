@@ -188,13 +188,13 @@ Where:
 Clone repository:
 
 ```
-git clone <repository_url>
+git clone https://github.com/sanjaykumar545/Decision-Companion-System
 ```
 
 Navigate to project folder:
 
 ```
-cd decision-companion
+cd Decision-Companion-System
 ```
 
 Run the program:
@@ -266,12 +266,11 @@ This ensures:
 - Add sensitivity analysis  
   → Show how ranking changes if weights change  
 
-- Add confidence factor  
-  → Adjust score based on certainty of ratings  
+- Add AI agent api
+  → Can fetch values for the options as per criteria
 
 - Add optional AI assistant  
   → Suggest missing criteria
-  → loading the values for the options
   → Generate more natural explanations  
 
 - Add visualization  
@@ -285,7 +284,8 @@ This ensures:
 
 ## 10. Limitations
 
-- Depends on user-entered ratings  
+- Depends on user-entered ratings
+- Different types of criteria for different options is not possible  
 - Does not fetch real-world data automatically  
 - Assumes linear relationship between weight and rating  
 - Does not model probabilistic uncertainty  

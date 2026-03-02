@@ -30,3 +30,8 @@
 
 15. Can i use dictionaries inside dictionaries?
 
+16. How about adding a normalization durinf finding the weighted scoring model to get a proper percentage in case the max value for the criteria is specified
+
+17. What types of confused decisions can this model handle
+
+18. Can ai be added into the model so that it can fetch details about the options more accurately.
