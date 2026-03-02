@@ -4,7 +4,7 @@
 
 ## 1. Understanding of Problem Statement
 
-Real-world decisions often involve multiple competing factors. Whether choosing a bike, laptop, insurance plan, or investment strategy, users face:
+Real-world decisions often involve multiple competing factors. In the path of taking a decision, various confusions happens. Whether choosing a bike, laptop, insurance plan, or investment strategy, users face:
 
 - Multiple options  
 - Multiple evaluation criteria  
@@ -22,8 +22,6 @@ The goal of this project is to build a **Decision Companion System** that:
 - Evaluates options transparently  
 - Provides ranked recommendations  
 - Explains the reasoning clearly  
-
-The system must not be a black box and must not rely entirely on AI.
 
 ---
 
@@ -279,7 +277,6 @@ This ensures:
 - Add persistence  
   → Save past decisions and compare outcomes  
 
-
 ---
 
 ## 10. Limitations
@@ -289,6 +286,7 @@ This ensures:
 - Does not fetch real-world data automatically  
 - Assumes linear relationship between weight and rating  
 - Does not model probabilistic uncertainty  
+- Does not continuosly asks the user, whether he/she had a confusion ona decision.
 
 ---
 
